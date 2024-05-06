@@ -35,6 +35,8 @@ plt.title('First 50 values of the "International" column')
 plt.xlabel('Index')
 plt.ylabel('International Passengers')
 plt.show()
+```
+```
 rolling_mean_5 = data['International '].rolling(window=5).mean()
 print("First 10 values of the rolling mean with window size 5:")
 print(rolling_mean_5.head(10))
@@ -46,6 +48,8 @@ plt.xlabel('Index')
 plt.ylabel('International Passengers')
 plt.legend()
 plt.show()
+```
+```
 lag_order = 13
 model = AutoReg(data['International '], lags=lag_order)
 model_fit = model.fit()
